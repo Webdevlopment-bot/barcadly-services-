@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcadly Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+<nav>
+    <div class="logo">
+        <!-- Logo Image -->
+        <img src="https://media.istockphoto.com/id/1352531663/photo/b-silver-gold-and-black-font-orange-background-bee-3d-premium-alphabet-letters-numbers-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=hdXDvwHb52r6WS6M_ThJvyflgRgoogDVrXa-gJcpGOA=" alt="Barcadly Logo">
+        <!-- Logo Text -->
+        <span class="logo-text">Barcadly Services</span>
+    </div>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        &#9776;
+    </div>
+    <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" onclick="showContactForm()">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+    <!-- Font Awesome CDN for Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+<!-- WhatsApp and Contact Icons -->
+<div class="contact-icons">
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" class="contact-icon whatsapp">
+        <i class="fab fa-whatsapp"></i> <!-- Font Awesome WhatsApp Icon -->
+    </a>
+
+    <!-- Contact Icon -->
+    <a href="tel:+yourphonenumber" class="contact-icon phone">
+        <i class="fas fa-phone-alt"></i> <!-- Font Awesome Phone Icon -->
+    </a>
+</div>
+
+
+
+    <!-- Social Media Icons (Left Side) -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="social-icon facebook-icon">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    
+        <!-- Twitter Icon -->
+        <a href="https://twitter.com" target="_blank" class="social-icon twitter-icon">
+            <i class="fab fa-twitter"></i>
+        </a>
+    
+        <!-- Instagram Icon -->
+        <a href="https://instagram.com" target="_blank" class="social-icon instagram-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+<!-- Home Section -->
+<section id="home">
+    <h1>Welcome to Barcadly Services</h1>
+    <p>Your trusted partner for quality services</p>
+    <button onclick="scrollToSection('about')">Learn More</button>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a leading provider of diverse services with a strong commitment to quality and customer satisfaction.</p>
+    
+    <!-- Multiple Images in About Section -->
+    <div class="about-images">
+        
+        <img src="https://media.istockphoto.com/id/1665093623/photo/digital-marketing-and-technology.jpg?s=612x612&w=0&k=20&c=ooA_EDmQk_QcTz_lzG6WKIcJT9uiDJuNztZcM-0EcqQ=" alt="Digital Marketing Image">
+        <img src="https://media.istockphoto.com/id/1413483196/photo/digital-marketing-concept.jpg?s=612x612&w=0&k=20&c=OpQ5yOsCmpk9O6nKhi-cSfX1Isx-XLY6gs1GKEQ2m_w=" alt="Marketing Concept Image">
+        <img src="https://media.istockphoto.com/id/1432533019/photo/smartphone-with-clock-bullseye-arrow-business-line-chart-sign-3d-render.jpg?s=612x612&w=0&k=20&c=vd5EUhLYvCocnXZRhZ84eZhs55GzmK-BFtZud4SVDEI=" alt="Smartphone and Business Chart Image">
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="service-item" onclick="showServiceModal('service1')">
+        <img src="https://media.istockphoto.com/id/1456339578/photo/developing-programming-and-coding-technologies-professional-developer-programmer-cooperation.webp?a=1&b=1&s=612x612&w=0&k=20&c=d-61mo1-S520J8dT80uAYu__Wnoz0n1f8VhLF76VxW0=" alt="Service 1">
+        <h3>Web Development</h3>
+        <p>We build highly scalable and reliable websites and applications to meet your business needs.</p>
+    </div>
+    <div class="service-item" onclick="showServiceModal('service2')">
+        <img src="https://media.istockphoto.com/id/1443560890/photo/digital-marketing-business-technology-concept-website-advertisement-email-social-media.webp?a=1&b=1&s=612x612&w=0&k=20&c=7y9fW3AX6d3TsOiY-A3aegkgaQqg6p0H3OtoDdXkkPs=" alt="Service 2">
+        <h3>Digital Marketing</h3>
+        <p>Our digital marketing strategies are designed to boost your online presence and increase conversions.</p>
+    </div>
+    <div class="service-item" onclick="showServiceModal('service3')">
+        <img src="https://media.istockphoto.com/id/1415537875/photo/asian-graphic-designer-working-in-office-artist-creative-designer-illustrator-graphic-skill.webp?a=1&b=1&s=612x612&w=0&k=20&c=ypieC5cL_wuZZyi32PJyWmYOZTVYjtAEyI3JICla-Uc=" alt="Service 3">
+        <h3>Graphic Design</h3>
+        <p>Creating visually appealing graphics to enhance your brand identity and customer engagement.</p>
+    </div>
+    <div class="service-item" onclick="showServiceModal('service4')">
+        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW9iaWxlJTIwYXBwJTIwZGV2JTIwaW1hZ2VzfGVufDB8fDB8fHww" alt="Service 4">
+        <h3>Mobile App Development</h3>
+        <p>We design and develop mobile applications that are intuitive and user-friendly for all platforms.</p>
+    </div>
+    <!-- Additional Services -->
+    <div class="service-item" onclick="showServiceModal('service5')">
+        <img src="https://media.istockphoto.com/id/670060572/photo/businessman-with-flying-cubes.webp?a=1&b=1&s=612x612&w=0&k=20&c=Bbp5q_zRuxec96muiKqeyyNSLjzNuJbNlBkWqxmwnKM=" alt="Service 5">
+        <h3>E-commerce Solutions</h3>
+        <p>We provide end-to-end e-commerce solutions to help you run a successful online store.</p>
+    </div>
+    <div class="service-item" onclick="showServiceModal('service6')">
+        <img src="https://media.istockphoto.com/id/459434789/photo/photo-of-a-man-selecting-search-optimization.webp?a=1&b=1&s=612x612&w=0&k=20&c=6N0dZXdhfcDAskbJe4zBHEJzC89fFwGKryvYjpe_130=" alt="Service 6">
+        <h3>SEO Optimization</h3>
+        <p>We optimize your website to rank higher in search engines and bring more organic traffic.</p>
+    </div>
+</section>
+
+<!-- Service Modal -->
+<div id="service-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeServiceModal()">&times;</span>
+        <h2 id="modal-service-title"></h2>
+        <p id="modal-service-description"></p>
+        <img id="modal-service-image" src="" alt="Service Image">
+    </div>
+</div>
+
+<section class="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="slider-container">
+        <div class="slider">
+          <!-- Updated Image Links -->
+          <img src="https://images.unsplash.com/photo-1576642589592-7d9778a1c9e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBhY2tpbmclMjBzbmFja3MlMjBhbmQlMjBvdGhlciUyMHNlcnZpY2VzJTIwaW1nZXN8ZW58MHx8MHx8fDA%3D" alt="Slide 1">
+          <img src="https://media.istockphoto.com/id/1030316292/photo/3d-rendering-of-milk-paper-packaging-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=NHuNlYleNUOV4ekPb5l5dHYErhonfEV6-GwPQ0r7Av8=" alt="Slide 2">
+          <img src="https://media.istockphoto.com/id/1219854233/photo/social-network.jpg?s=612x612&w=0&k=20&c=-jU29fiMELpXAwH8mXBFns7QuV7I6yIOHDwSb2dvqv0=" alt="Slide 3">
+          <img src="https://media.istockphoto.com/id/1413735503/photo/social-media-social-media-marketing-thailand-social-media-engagement-post-structure.webp?a=1&b=1&s=612x612&w=0&k=20&c=ggHErj-i0o6fBCYfNpge3Nn8OvXku1tdDa3vHerCm6Q=" alt="Slide 4">
+        </div>
+    
+        <!-- Navigation buttons -->
+        <button class="nav-button prev">&#10094;</button>
+        <button class="nav-button next">&#10095;</button>
+    
+        <!-- Dots Navigation -->
+        <div class="slide-nav">
+          <span class="dot" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </div>
+</section>
+
+
+
+<!-- Client Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item">
+            <div class="testimonial-image">
+               
+            </div>
+            <div class="testimonial-content">
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p class="testimonial-description">
+                    "The team at Barcadly Services was incredible. They helped us build a user-friendly website that helped us increase customer engagement!"
+                </p>
+                <h4 class="client-name">John Doe</h4>
+                <p class="client-position">CEO, ABC Company</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item">
+            <div class="testimonial-image">
+               
+            </div>
+            <div class="testimonial-content">
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-description">
+                    "Their digital marketing strategies have significantly boosted our brand's visibility. We highly recommend Barcadly Services!"
+                </p>
+                <h4 class="client-name">Jane Smith</h4>
+                <p class="client-position">Marketing Head, XYZ Corp</p>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-item">
+            <div class="testimonial-image">
+              
+            </div>
+            <div class="testimonial-content">
+                <div class="stars">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+                <p class="testimonial-description">
+                    "Excellent customer support and website development. Our clients love the new website, and our online sales have doubled!"
+                </p>
+                <h4 class="client-name">Michael Lee</h4>
+                <p class="client-position">Founder, Tech Solutions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+
+    <!-- Footer Section -->
+<footer id="footer">
+    <div class="footer-container">
+        <div class="company-details">
+            <h3>Barcadly Services</h3>
+            <p><strong>Address:</strong> 1234 Business Ave, Suite 101, City, Country</p>
+            <p><strong>Contact:</strong> +123 456 7890</p>
+            <p><strong>Email:</strong> info@barcadlyservices.com</p>
+        </div>
+        
+        <div class="office-hours">
+            <h4>Office Hours:</h4>
+            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+            <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+            <p><strong>Sunday:</strong> Closed</p>
+        </div>
+
+        <div class="current-date-time">
+            <h4>Current Date & Time:</h4>
+            <p id="date-time"></p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
